@@ -1,0 +1,17 @@
+Joseph Heller
+
+Quick REAMDME. 
+
+0. As reference, use HTC Ville 
+
+1. Use CyanogenMod ICS
+
+2. Patch for the screen offset issue:
+
+No time yet to offically patch this, or push a commit to the official branch of CM ICS. To install the patch:
+
+Backup the original bootable/recovery/minui/graphics.c, and replace it with the graphics.c file in the patch directory.
+
+3. Download original kernel for the HTC Desire SV from htcdev.com
+
+4. Source should build now...
