@@ -14,6 +14,9 @@ BOARD_KERNEL_CMDLINE := no_console_suspend=1 console=null
 BOARD_KERNEL_BASE := 0x03200000 # matches magnids_defconfig CONFIG_PHYS_OFFSET=0x3200000
 BOARD_KERNEL_PAGESIZE := 2048
 
+#TARGET_RECOVERY_PIXEL_FORMAT := "RGBX_8888"
+BOARD_CUSTOM_GRAPHICS:= ../../../device/htc/magnids/patch_recovery/graphics.c
+
 # contents of /proc/emmc:
 #
 # dev:        size     erasesize name

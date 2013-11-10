@@ -2,16 +2,13 @@ Joseph Heller
 
 Quick REAMDME. 
 
-0. As reference, use HTC Ville 
+1. Use CyanogenMod ICS (9.1.0) as base. For this to work, you need to have basic skills in building CM ROM's already. 
 
-1. Use CyanogenMod ICS
+2. Download original kernel for the HTC Desire SV from htcdev.com
 
-2. Patch for the screen offset issue:
-
-No time yet to offically patch this, or push a commit to the official branch of CM ICS. To install the patch:
-
-Backup the original bootable/recovery/minui/graphics.c, and replace it with the graphics.c file in the patch directory.
-
-3. Download original kernel for the HTC Desire SV from htcdev.com
-
-4. Source should build now...
+3. Source should build now...
+cd ~/android/system		(goto root directory of CM)
+source build/envsetup.sh	(sets build environment; e.g. this sets paths to "lunch" commands)
+lunch cm_magnids-eng		(sets the build system for the device)
+make clobber			(removes build directory to ensure completely fresh rebuild)
+make -j12 recoveryimage		(builds recovery image by a 6-core host)

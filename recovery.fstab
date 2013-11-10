@@ -12,4 +12,5 @@
 /system     	 ext4   /dev/block/mmcblk0p25
 /devlog          ext4   /dev/block/mmcblk0p28
 /internal_sdcard vfat   /dev/block/mmcblk0p31
+/sd-ext          vfat   /dev/block/mmcblk1p1
 
